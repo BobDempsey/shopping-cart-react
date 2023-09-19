@@ -29,8 +29,6 @@ const ShopContextProvider = (props) => {
     removeFromCart,
   };
 
-  console.log(cartItems);
-
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
