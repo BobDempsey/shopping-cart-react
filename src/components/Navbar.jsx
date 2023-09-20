@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="bg-slate-800 text-white flex items-center justify-between h-16 p-4 bg-gradient-to-r from-slate-800 to-slate-700">
       <div className="text-2xl font-medium tracking-tight">
-        <Link to="/">React eCommerce</Link>
+        <Link to="/">React Shopping Cart</Link>
       </div>
       <div className="flex items-center space-x-6 font-medium text-lg">
         {/* <Link to="/">Shop</Link> */}
