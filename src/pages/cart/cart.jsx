@@ -22,11 +22,15 @@ const Cart = () => {
           return <CartItem data={product} key={product.id} />;
         })}
       </div>
-      <div className="checkout">
-        <p>Subtotal: ${totalAmount}</p>
-        <button onClick={() => navigate("/")}>Continue Shopping</button>
-        <button>Checkout</button>
-      </div>
+      {totalAmount > 0 ? (
+        <div className="checkout">
+          <p>Subtotal: ${totalAmount}</p>
+          <button onClick={() => navigate("/")}>Continue Shopping</button>
+          <button>Checkout</button>
+        </div>
+      ) : (
+        <h1>Your cart is empty</h1>
+      )}
     </div>
   );
 };
