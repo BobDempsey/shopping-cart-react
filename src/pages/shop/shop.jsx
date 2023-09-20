@@ -11,7 +11,8 @@ const shop = () => {
           </h1>
           <p className="text-xl max-w-3xl mt-5 tracking-normal mb-4">
             A fully responsive React shopping cart application using Create
-            React App, TailwindCSS, the React Context API, and Vercel for CI/CD.
+            React App, TailwindCSS, the React Context API, React Router, and
+            Vercel for CI/CD.
           </p>
           <p className="mb-10 text-xl max-w-3xl">
             Add and remove items to the cart, update items quantities, or clear
