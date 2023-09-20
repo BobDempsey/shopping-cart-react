@@ -7,14 +7,16 @@ import ShopContextProvider from "./context/shop-context";
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-h-screen bg-gradient-to-tr from-slate-200 to-slate-100">
       <ShopContextProvider>
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Shop />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
+          <main className="max-w-6xl mx-auto pt-12 pb-20">
+            <Routes>
+              <Route path="/" element={<Shop />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </main>
         </Router>
       </ShopContextProvider>
     </div>
