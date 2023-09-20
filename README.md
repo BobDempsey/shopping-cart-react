@@ -1,6 +1,9 @@
 https://www.youtube.com/watch?v=tEMrD9t85v4&t=3636s&ab_channel=PedroTech
 
-- context api
+A React eCommerce/Shopping Cart application using Create React App, TailwindCSS, the React Context API, and Vercel for CI/CD.
+
+https://tailwindcss.com
+https://github.com/facebook/create-react-app
 
 # Create React App
 
