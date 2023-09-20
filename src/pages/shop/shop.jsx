@@ -10,7 +10,7 @@ const shop = () => {
             React eCommerce
           </h1>
           <p className="text-xl max-w-3xl mt-4 mb-10 tracking-normal">
-            A full responsive React eCommerce/Shopping Cart application using
+            A fully responsive React eCommerce/Shopping Cart application using
             Create React App, TailwindCSS, the React Context API, and Vercel for
             CI/CD.
           </p>

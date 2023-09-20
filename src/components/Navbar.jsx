@@ -19,7 +19,7 @@ const Navbar = () => {
             <ShoppingCart size={32} />
           </Link>
           {count > 0 && (
-            <div className="absolute top-5 -left-6 rounded-full bg-pink-500  w-5 h-5 font-bold text-base grid place-content-center">
+            <div className="absolute top-5 -left-6 rounded-full bg-pink-500 w-5 h-5 font-bold text-base grid place-content-center">
               <div className="-mt-[3px]">{count}</div>
             </div>
           )}
