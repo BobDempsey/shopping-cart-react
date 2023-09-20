@@ -15,15 +15,20 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
-  const getTotalCartAmount = () => {
-    let totalAmount = 0;
+  const getCartSubtotal = () => {
+    let subtotal = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
-        totalAmount += cartItems[item] * itemInfo.price;
+        subtotal += cartItems[item] * itemInfo.price;
       }
     }
-    return totalAmount;
+    return subtotal.toFixed(2);
+  };
+
+  const cartItemsCount = () => {
+    const count = Object.values(cartItems).reduce((acc, curr) => acc + curr, 0);
+    return count;
   };
 
   const addToCart = (itemId) => {
@@ -43,7 +48,8 @@ const ShopContextProvider = (props) => {
     addToCart,
     removeFromCart,
     updateCartItemCount,
-    getTotalCartAmount,
+    getCartSubtotal,
+    cartItemsCount,
   };
 
   return (

@@ -4,8 +4,8 @@ import product3 from "./assets/products/3.jpg";
 import product4 from "./assets/products/4.jpg";
 import product5 from "./assets/products/5.jpg";
 import product6 from "./assets/products/3.png";
-import product7 from "./assets/products/7.webp";
-import product8 from "./assets/products/8.webp";
+// import product7 from "./assets/products/7.webp";
+// import product8 from "./assets/products/8.webp";
 
 export const PRODUCTS = [
   {

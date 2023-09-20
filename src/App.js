@@ -11,7 +11,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar />
-          <main className="max-w-6xl mx-auto pt-12 pb-20">
+          <main className="max-w-6xl mx-auto pt-12 pb-20 px-6">
             <Routes>
               <Route path="/" element={<Shop />} />
               <Route path="/cart" element={<Cart />} />
